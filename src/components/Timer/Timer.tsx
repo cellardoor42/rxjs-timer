@@ -17,7 +17,7 @@ const Timer: React.FC<ITimerProps> = ({
   resetTime,
 }: ITimerProps) => {
   const [currentTimerValue, setCurrentTimerValue] = useState<Moment>(
-    INITIAL_TIME
+    INITIAL_TIME()
   );
   const [isRunning, setIsRunning] = useState(false);
   const [atTheStart, setAtTheStart] = useState(true);
