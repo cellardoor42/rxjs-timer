@@ -1,0 +1,36 @@
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.time {
+  font-size: 70px;
+}
+
+.timer-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.action {
+  margin: 15px;
+  cursor: pointer;
+  width: 150px;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 3px;
+  transition: all ease 300ms;
+}
+
+.action:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.action:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
