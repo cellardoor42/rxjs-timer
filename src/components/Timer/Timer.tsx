@@ -44,24 +44,20 @@ const Timer: React.FC<ITimerProps> = ({
       <div className='timer-actions'>
         {!isRunning && atTheStart && (
           <span className='action' onClick={() => pauseSubject.next(true)}>
-            {' '}
             Start
           </span>
         )}
         {isRunning && (
           <span className='action' onClick={() => pauseSubject.next(false)}>
-            {' '}
             Pause
           </span>
         )}
         {!isRunning && !atTheStart && (
           <>
             <span className='action' onClick={() => pauseSubject.next(true)}>
-              {' '}
               Resume
             </span>
             <span className='action' onClick={reset}>
-              {' '}
               Reset
             </span>
           </>
